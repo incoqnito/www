@@ -1,0 +1,12 @@
+exclude: 
+  - src
+  - node_modules
+  - webpack.config
+  - package.json
+source: www
+destination: public
+include:
+  - _pages
+keep_files:
+  - index.js
+  - static

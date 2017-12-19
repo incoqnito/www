@@ -1,0 +1,78 @@
+.navigation
+  padding-top: 12px;
+  position: absolute;
+  width: 100%;
+
+.navigation .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.navigation-logo
+  flex: 1 0 auto
+  padding-left: 8px;
+  img
+    padding-top: 8px;
+    width: 120px;
+
+.navigation-list
+  padding: 0;
+  margin: 0;
+  flex: 0 1 auto
+  list-style: none;
+  display: flex;
+
+.navigation-entry
+  flex: 0 1 auto;
+  color: white;
+  a
+    display: block;
+    color white;
+    padding: 16px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  
+
+
+.sub-navigation
+  position: absolute;
+  width: 100%;
+  background: rgba(0,0,0, 0.4)
+  bottom: 0;
+  transition: background 0.3s ease-in
+
+.sub-navigation-wrapper {
+  display: flex;
+  align-items: center
+}
+
+.sub-navigation.affix
+  position: fixed
+  top: 0
+  height: 47px;
+  background: rgba(0,0,0, 0.8)
+
+
+.sub-navigation-list
+  position: relative;
+  padding: 0;
+  text-align: center;
+  margin: auto;
+  list-style: none;
+  flex: 0 1 auto;
+  display: flex;
+
+.sub-navigation-entry
+  flex: 0 1 auto;
+  color: white;
+  a
+    display: block;
+    color white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+    &:hover {
+      border-bottom: 3px solid white;
+    }
