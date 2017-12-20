@@ -6,11 +6,14 @@ body {
 
 .banner-wrapper {
   position: relative;
-  width: 100vw;
-  height: 100vh;
-  background: #6569B0;
-  background: -webkit-linear-gradient(to right, #5459a8, #6569B0, #767ab9);
-  background: linear-gradient(to right, #5459a8, #6569B0, #767ab9);
+  &.banner-wrapper--color-3 {
+    background: #6569B0;
+    background: -webkit-linear-gradient(to right, #5459a8, #6569B0, #767ab9);
+    background: linear-gradient(to right, #5459a8, #6569B0, #767ab9);
+  }
+  &.banner-wrapper--color-4 {
+    background: #da1c5c
+  }
 }
 
 .banner {
@@ -22,6 +25,28 @@ body {
   background-image: url('/static/background.svg')
   background-size: cover;
   background-position: center center
+}
+
+.banner.banner--half {
+  height: 50vh;
+}
+
+
+#totop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  background: rgba(0,0,0, 0.2)
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in
+  &:hover {
+    background: rgba(0,0,0, 0.4)
+  }
 }
 
 .banner-item {

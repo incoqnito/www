@@ -7,11 +7,13 @@ import'./img/xing.svg'
 import'./img/linkedin.svg'
 import'./img/instagram.svg'
 import'./img/menu.svg'
+import './img/arrow-top.svg'
 import'./img/background.png'
 import'./img/background.svg'
 
 import 'jquery'
 import 'bootstrap'
+import Slideout from  'slideout'
 
 $(document).ready(() => {
   $('.sub-navigation').affix({
@@ -62,29 +64,27 @@ $(document).ready(() => {
     }
   });
 
+  var slideout = new Slideout({
+    'panel': document.querySelector('.site-container'),
+    'menu': document.querySelector('.site-navigation'),
+    'padding': 256,
+    'tolerance': 70
+  });
 
-  $('.social-media-icon.facebook').mouseover( function(){
-    $('.follow').addClass('facebook');
+  document.querySelector('.mobile-navigation').addEventListener('click', function() {
+    slideout.toggle();
   });
-  $('.social-media-icon.facebook').mouseout( function(){
-    $('.follow').removeClass('facebook');
+
+  $(window).scroll(function()
+  {
+      var window = $(this); 
+      var totop = $('#totop')
+      if(window.scrollTop() === 0) {
+        totop.fadeOut()
+      } else if(totop.css('display') === 'none') {
+        totop.fadeIn()
+      }
   });
-  $('.social-media-icon.xing').mouseover( function(){
-    $('.follow').addClass('xing');
-  });
-  $('.social-media-icon.xing').mouseout( function(){
-    $('.follow').removeClass('xing');
-  });
-  $('.social-media-icon.linkedin').mouseover( function(){
-    $('.follow').addClass('linkedin');
-  });
-  $('.social-media-icon.linkedin').mouseout( function(){
-    $('.follow').removeClass('linkedin');
-  });
-  $('.social-media-icon.instagram').mouseover( function(){
-    $('.follow').addClass('instagram');
-  });
-  $('.social-media-icon.instagram').mouseout( function(){
-    $('.follow').removeClass('instagram');
-  });
+
+
 })

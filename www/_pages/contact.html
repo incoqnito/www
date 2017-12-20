@@ -1,7 +1,48 @@
 ---
-permalink: /kontakt
+  layout: page 
+  permalink: /kontakt
 ---
-<div class="container">
-Test
- 
-</div>
+<div id="home" class="banner-wrapper banner-wrapper--color-4">
+    <div class="banner banner--half">
+      <div class="banner-item">
+
+      </div>
+    </div>
+    <div class="sub-navigation">
+      <div class="sub-navigation-wrapper">
+        <ul class="sub-navigation-list">
+          <li class="sub-navigation-entry">
+            <a href="#individual">Karte</a>
+          </li>
+          <li class="sub-navigation-entry">
+            <a href="#transform">Kontaktformular</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<section id="maps" class="section grey-section">
+
+</section>
+<script>
+  function initMap() {
+    // Create a map object and specify the DOM element for display.
+    var map = new google.maps.Map(document.getElementById('maps'), {
+      center: {
+        lat: 52.3614235,
+        lng: 9.8283783
+      },
+      zoom: 16
+    });
+
+    var marker = new google.maps.Marker({
+      position: {
+        lat: 52.3614235,
+        lng: 9.8283783
+      },
+      map: map,
+      title: 'Incoqnito GmbH!'
+      })
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>

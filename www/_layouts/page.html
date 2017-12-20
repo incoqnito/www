@@ -9,7 +9,52 @@
       <title>{{ page.title }}</title>
     </head>
     <body>
-      {{ content }}
+      <div class="site">
+        <div class="navigation">
+          <div class="container">
+            <div class="navigation-logo">
+              <img src="/static/incoqnito_logo_white.svg" />
+            </div>
+            <ul class="navigation-list hidden-xs">
+              <li class="navigation-entry">
+                <a href="/">Startseite</a>
+              </li>
+              <li class="navigation-entry">
+                <a href="/unternehmen">Unternehmen</a>
+              </li>
+              <li class="navigation-entry">
+                <a href="/kompetenzen">Kompetenzen</a>
+              </li>
+              <li class="navigation-entry">
+                <a href="/referenzen">Referenzen</a>
+              </li>
+              <li class="navigation-entry">
+                <a href="/karriere">Karriere</a>
+              </li>
+              <li class="navigation-entry">
+                <a href="/kontakt">Kontakt</a>
+              </li>
+            </ul>
+            <a id="showMenu" class="mobile-navigation visible-xs">
+              <img src="/static/menu.svg">
+            </a>
+          </div>
+        </div>
+        <div class="site-container">
+          {{ content }}
+          <a id="totop" href="#home">
+            <img src="/static/arrow-top.svg" />
+          </a>
+          {% include footer.html %}
+        </div>
+        <div class="site-navigation">
+            <a href="/">Startseite</a>
+            <a href="/unternehmen">Unternehmen</a>
+            <a href="/kompetenzen">Kompetenzen</a>
+            <a href="/referenzen">Referenzen</a>
+            <a href="/karriere">Karriere</a>
+            <a href="/kontakt">Kontakt</a>
+          </div>
     </body>
     <script src="/index.js"></script>
 </html>
