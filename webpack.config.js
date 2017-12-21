@@ -33,7 +33,7 @@ module.exports = (env) => {
           ]
         },
         {
-          test: /\.svg$/,
+          test: /\.(svg|png)$/,
           use: [
             {
               loader: 'file-loader',

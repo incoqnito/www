@@ -1,11 +1,14 @@
 .footer {
-  background: #22202B;
+  background-color: #22202B;
   padding-top: 60px;
   padding-bottom: 60px;
+  background-image: url(/static/background.svg);
+  background-size: cover;
+  background-position: center bottom;
 }
 
 .footer-headline {
-  padding-top: 40px;
+  padding-top: 48px;
   font-weight: 400;
   font-size: 14px;
   color: #ccc;
@@ -23,7 +26,7 @@
 
 .footer-contact {
   margin: 0;
-  padding: 24px 0;
+  padding: 16px 0;
   color: #ccc;
   p {
     margin: 0;
@@ -36,7 +39,8 @@
   }
   .phone {
     font-weight: 300;
-    font-size: 32px;  
+    font-size: 32px;
+    color: white;
   }
 }
 
@@ -44,7 +48,7 @@
 .footer-links {
   padding: 0;
   margin: 0;
-  padding-top: 24px;
+  padding-top: 16px;
   list-style: none;
   li a {
     display: block;
@@ -54,6 +58,10 @@
     text-transform: uppercase
     letter-spacing: 0.1em
     text-decoration: none;
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.8)
+    &:hover {
+      text-decoration: underline
+    }
   }
 }
 

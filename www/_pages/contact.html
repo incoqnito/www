@@ -12,17 +12,69 @@
       <div class="sub-navigation-wrapper">
         <ul class="sub-navigation-list">
           <li class="sub-navigation-entry">
-            <a href="#individual">Karte</a>
+            <a href="#transform">Kontakt</a>
           </li>
           <li class="sub-navigation-entry">
-            <a href="#transform">Kontaktformular</a>
+            <a href="#individual">Karte</a>
           </li>
         </ul>
       </div>
     </div>
   </div>
-<section id="maps" class="section grey-section">
+<section id="form" class="section white-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+          <h4>Wenn Sie Fragen zu unseren Leistungen und Angeboten haben, können Sie das folgende Kontaktformular nutzen. Wir werden uns umgehend bei Ihnen melden.</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-5">
+        <h4>Anschrift</h4>
+        <p><strong>Incoqnito GmbH</strong></p>
+        <p>Tiergartenstr. 105</p>
+        <p>30559 Hannover</p>
+        <p>Tel.: 01779651165</p>
+        <p>E-Mail: <a href="mailto:info@incoqnito.io">info@incoqnito.io</a></p>
 
+        <br>
+        <h4>Öffnungszeiten</h4>
+        <p><strong>Montag - Freitag:</strong> 09:00 - 17:00 Uhr</p>
+        <p><strong>Samstag:</strong> Geschlossen</p>
+        <p><strong>Sonntag:</strong> Geschlossen</p>
+      </div>
+      <div class="col-lg-7">
+        <h4>Kontaktiere uns</h4>
+        <div class="row">
+          <div class="col-lg-12">
+            <input type="text" placeholder="Name">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <input type="text" placeholder="Firma">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <input type="email" placeholder="E-Mail">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <textarea>
+
+            </textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section color-section color-section--color-4">
+  <h2>Sie finden uns hier</h2>
+</section>
+<section id="maps" style="height: 350px" class="section grey-section">
 </section>
 <script>
   function initMap() {
@@ -41,8 +93,10 @@
         lng: 9.8283783
       },
       map: map,
-      title: 'Incoqnito GmbH!'
-      })
-    }
+      icon: {
+        url: '/static/marker.png',
+      }
+    })
+  }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCp50vI1s3y8vTuhU3TQoxgO2N-8Mz_sUs&callback=initMap" async defer></script>

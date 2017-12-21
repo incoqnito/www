@@ -1,6 +1,5 @@
 .section {
   padding: 60px 0;
-  min-height: 400px
   outline: none;
   display: flex;
   flex-direction: column;
@@ -16,12 +15,18 @@
   background: #f1f1f1; 
 }
 
-.color-section {
+.color-section
   background: #6569B0;
   background: -webkit-linear-gradient(to right, #6569B0, #865B99);
   background: linear-gradient(to right, #6569B0, #865B99);
-
-  h2, p {
+  &.color-section--color-3
+    background: #6569B0;
+    background: -webkit-linear-gradient(to right, #6569B0, #865B99);
+    background: linear-gradient(to right, #6569B0, #865B99);
+  &.color-section--color-4
+    background: #da1c5c;
+    background: -webkit-linear-gradient(to right, #e7427a, #da1c5c, #e7427a);
+    background: linear-gradient(to right, #e7427a, #da1c5c, #e7427a);
+  h2, p
     color: white;
-  }
-}
+  
