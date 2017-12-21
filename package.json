@@ -5,7 +5,8 @@
   "main": "Gulpfile.js",
   "scripts": {
     "start": "npm run development",
-    "development": "webpack -w -d --env.NODE_ENV=development"
+    "development": "webpack -w -d --env.NODE_ENV=development", 
+    "production": "webpack -p --env.NODE_ENV=production"
   },
   "devDependencies": {
     "autoprefixer": "6.7.2",

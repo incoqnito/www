@@ -37,10 +37,11 @@
       text-decoration: underline;
 
 .mobile-navigation {
-  flex: 0 1 auto;
+  flex: 0 1 50px;
+  transition: max-width 50%
   height: 50px;
-  width: 50px;
   padding: 8px;
+  cursor: pointer;
 }
 
 .sub-navigation
@@ -60,6 +61,7 @@
   position: fixed
   top: 0
   height: 47px;
+  z-index: 1000;
   background: rgba(0,0,0, 0.8)
 
 
@@ -115,12 +117,15 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 256px;
+  width: 100%;
   min-height: 100vh;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   z-index: 0;
   display: none;
+  background-image: url(/static/background.svg);
+  background-size: cover;
+  background-position: left top;
 }
 
 .slideout-menu-left {
@@ -143,6 +148,11 @@
 .slideout-open body,
 .slideout-open .slideout-panel {
   overflow: hidden;
+}
+
+.slideout-open .navigation-logo {
+  display: none
+  flex: 0 1 100%;
 }
 
 .slideout-open .slideout-menu {

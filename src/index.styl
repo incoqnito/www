@@ -6,6 +6,10 @@ body {
 
 .banner-wrapper {
   position: relative;
+  &.banner-wrapper--color-all {
+    background: -webkit-linear-gradient(to right, #3c9cd7, #6569B0, #865b99, #da1c5c);
+    background: linear-gradient(45deg, #3c9cd7, #6569B0 30%, #865b99 70%, #da1c5c );
+  }
   &.banner-wrapper--color-1 {
     background: #3c9cd7;
     background: -webkit-radial-gradient(closest-corner at center, #51a7db, #3c9cd7, #2a90cf);

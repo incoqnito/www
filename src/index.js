@@ -62,11 +62,11 @@ $(document).ready(() => {
       }
     }
   });
-
+  console.log(+document.querySelector('.site').offsetWidth * 0.80)
   var slideout = new Slideout({
     'panel': document.querySelector('.site-container'),
     'menu': document.querySelector('.site-navigation'),
-    'padding': 256,
+    'padding': document.querySelector('.site').offsetWidth - 80,
     'tolerance': 70
   });
 

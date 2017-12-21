@@ -1,0 +1,12 @@
+{
+  "deploy" : {
+    "production" : {
+      "user" : "root",
+      "host" : ["82.165.207.34"],
+      "ref"  : "origin/master",
+      "repo" : "git@github.com:incoqnito/www.git",
+      "path" : "/var/www/dev.incoqnito.io",
+      "_post-deploy" : "npm install; jekyll build; npm run production"
+     }
+  }
+}
