@@ -6,7 +6,7 @@
       "ref"  : "origin/master",
       "repo" : "git@github.com:incoqnito/www.git",
       "path" : "/var/www/dev.incoqnito.io",
-      "post-deploy" : "npm install; jekyll build; npm run production"
+      "post-deploy" : "npm install; rvm use 2.2.5; jekyll build; npm run production"
      }
   }
 }
