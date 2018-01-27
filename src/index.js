@@ -1,5 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.css'
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'animate.css'
 import './index.styl'
+import './img/testamonial-background.jpg'
 
 import './img/incoqnito_logo_white.svg'
 import './img/facebook.svg'
@@ -10,8 +13,21 @@ import './img/menu.svg'
 import './img/arrow-top.svg'
 import './img/background.svg'
 import './img/marker.png'
+
+import './img/icons/costs.svg'
+import './img/icons/feedback-loop.svg'
+import './img/icons/ruler.svg'
+import './img/icons/skill.svg'
+import './img/icons/costs.svg'
+import './img/icons/timesaving.svg'
+import './img/icons/transparence.svg'
+import './img/icons/person.svg'
+
+
 import 'jquery'
 import 'bootstrap'
+import 'owl.carousel'
+
 import Slideout from  'slideout'
 
 $(document).ready(() => {
@@ -85,5 +101,32 @@ $(document).ready(() => {
       }
   });
 
+  $('.testamonial').owlCarousel({
+    animateOut: 'fadeOut',
+    animateIn: 'slideInUp',
+    items: 1,
+    margin: 30,
+    dots: true,
+    dotsEach: true,
+    stagePadding:30,
+    smartSpeed:450
+  });
+
+  $('.customers').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    responsive:{
+      0:{
+        items:2,
+      },
+      600:{
+        items:5,
+      },
+      1000:{
+        items:10
+      }
+    }
+  })
 
 })

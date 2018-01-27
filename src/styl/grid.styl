@@ -29,4 +29,69 @@
     background: linear-gradient(to right, #e7427a, #da1c5c, #e7427a);
   h2, p
     color: white;
-  
+
+.section-content {
+  padding-top: 60px;
+
+  &.--right-aligned {
+    text-align: right
+  }
+}
+
+.section-title
+  h2
+    font-weight: 300;
+    text-align: center
+    color: #58595B;
+    font-size: 32px;
+    letter-spacing: 0.1em;
+    span.colored {
+      color: #6569B0;
+      font-weight: 300;
+    }
+  .separator
+    width: 100px;
+    height: 1px;
+    background: #58595B;
+    margin-top: 16px;
+    margin: auto;
+
+
+.section-subtitle
+  h4
+    font-weight: 300
+    font-size: 16px;
+    padding: 16px;
+    text-align: center;
+
+.testamonial-section {
+  background: url('/static/testamonial-background.jpg')
+  background-size: cover;
+  background-position: center center
+  padding: 0;
+  .section-title {
+    h2 {
+      color: white;
+    }
+    .separator {
+      background: white
+    }
+    span.colored {
+      color: #da1c5c;
+    }
+  }
+  .section-subtitle h4 {
+    color white;
+  } 
+}
+
+.testamonial-section-overlay {
+  background: rgba(34, 32, 43, 0.8);
+  padding: 80px 40px;
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

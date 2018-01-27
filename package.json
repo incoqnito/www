@@ -5,7 +5,7 @@
   "main": "Gulpfile.js",
   "scripts": {
     "start": "npm run development",
-    "development": "webpack -w -d --env.NODE_ENV=development", 
+    "development": "webpack -w -d --env.NODE_ENV=development",
     "production": "webpack -p --env.NODE_ENV=production"
   },
   "devDependencies": {
@@ -47,9 +47,11 @@
     "webpack": "3.4.1"
   },
   "dependencies": {
+    "animate.css": "^3.5.2",
     "bootstrap": "^3.3.7",
     "jquery": "^3.2.1",
     "jquery-sticky": "^1.0.4",
+    "owl.carousel": "^2.2.0",
     "slideout": "^1.0.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.1"

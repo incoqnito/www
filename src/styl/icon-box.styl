@@ -1,0 +1,47 @@
+.icon-box {
+  position: relative;
+  padding: 80px 40px;
+  text-align: center;
+  img {
+    height: 100px;
+  }
+  h3 {
+    font-weight: 300;
+    font-size: 24px;
+  }
+
+  &.--is-active {
+    &:after {
+      display: block;
+    }  
+  }
+
+  &:after {
+    position: absolute;
+    content: '';
+    display: none;
+    left: 0;
+    bottom: -20px;
+    width: 0; 
+    height: 0; 
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid white;
+    left: 50%;
+    margin-left: -20px;
+  }
+}
+
+.icon-box-description {
+  background: #1e272e;
+  min-height: 100px;
+  width: 100%;
+  padding: 80px 0;
+  box-shadow: inset 0 0 20px rgb(0,0,0);
+
+  p {
+    font-weight: 300;
+    color: white;
+    font-size: 20px;
+  }
+}
