@@ -1,43 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 
 body {
   margin: 0px;
-  font-weight: 300
+  font-weight: 300;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .banner-wrapper {
   position: relative;
   &.banner-wrapper--color-all {
-    background: -webkit-linear-gradient(to right, #3c9cd7, #6569B0, #865b99, #da1c5c);
-    background: linear-gradient(45deg, #3c9cd7, #6569B0 30%, #865b99 70%, #da1c5c );
+    background: linear-gradient(45deg, #3c9cd7, 10%, #6569B0, 50%, #865b99, 90%, #da1c5c)
   }
   &.banner-wrapper--color-1 {
     background: #3c9cd7;
-    background: -webkit-radial-gradient(closest-corner at center, #51a7db, #3c9cd7, #2a90cf);
     background: radial-gradient(closest-corner at center, #51a7db, #3c9cd7, #2a90cf);
   }
   &.banner-wrapper--color-2 {
     background: #865b99;
-    background: -webkit-radial-gradient(closest-corner at center, #9368a5, #865b99, #785189);
     background: radial-gradient(closest-corner at center,  #9368a5, #865b99, #785189);
   }
   &.banner-wrapper--color-3 {
     background: #6569B0;
-    background: -webkit-radial-gradient(closest-corner at center, #767ab9, #6569B0, #5459a8);
     background: radial-gradient(closest-corner at center, #767ab9, #6569B0, #5459a8);
   }
   &.banner-wrapper--color-4 {
     background: #da1c5c;
-    background: -webkit-radial-gradient(closest-corner at center, #e7427a, #da1c5c, #e7427a);
     background: radial-gradient(closest-corner at center, #e7427a, #da1c5c, #e7427a);
   }
   &.banner-wrapper--color-5 {
     background: #58595b;
-    background: -webkit-radial-gradient(closest-corner at center, #656668, #58595b, #4b4c4e);
     background: radial-gradient(closest-corner at center, #656668, #58595b, #4b4c4e);
   }
 }
 
-#typed {
+.typed {
   font-size: 32px;
   line-height: 1;
   height: 32px;
@@ -90,7 +86,7 @@ body {
   }
   p {
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.5;
   }
   .button {
@@ -100,7 +96,6 @@ body {
     padding: 12px 36px
     min-width: 200px;
     font-size: 10px;
-    letter-spacing: 0.1em
     text-transform: uppercase
     transition: all 0.3s ease-in
     background-color: rgba(255,255,255,0.1);

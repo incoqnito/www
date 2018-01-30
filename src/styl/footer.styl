@@ -1,10 +1,11 @@
 .footer {
   background-color: #22202B;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 20px;
   background-image: url(/static/background.svg);
   background-size: cover;
   background-position: center bottom;
+  color: #ccc;
 }
 
 .footer-headline {
@@ -60,7 +61,6 @@
     font-size: 10px;
     color: #ccc;
     text-transform: uppercase
-    letter-spacing: 0.1em
     text-decoration: none;
     text-shadow: 1px 2px 2px rgba(0,0,0,0.8)
     &:hover {
@@ -69,85 +69,27 @@
   }
 }
 
+.bottom-footer {
+  font-size: 12px;  
+}
+
+.copyright {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 12px;  
+}
 
 .social-media {
-  background: #383745;
-  min-height: 150px;
-  padding: 40px 0;
-}
-
-.social-media-icons {
-  list-style-type: none;
-  padding: 0;
+  list-style: none;
+  display: flex;
   margin: 0;
-}
-.social-media-icons li {
-  height: 60px;
-  border-radius: 2px;
-  padding: 12px;
-  width: 60px;
-  font-size: 44px;
-  text-align: center;
-  font-weight: 100;
-  background: grey;
-  color: white;
-  float: left;
-  margin-right: 5px;
-  img {
-    vertical-align: top;
+  padding: 0 40px;
+  justify-content: flex-end;
+  li {
+    flex: 0 1 auto;
+    padding: 8px 16px;
+    img {
+      height: 32px;
+    }
   }
 }
-.social-media-icons li:last-child {
-  margin-right: 0;
-}
-
-.social-media-icons .social-media-icon {
-  filter: grayscale(100%);
-  transition: filter 0.2s ease-in-out  
-}
-
-.social-media-icons .social-media-icon:hover {
-  cursor: pointer;
-  filter: grayscale(0%);
-
-}
-.social-media-icons .social-media-icon.facebook {
-  background-color: #3b5998;
-  opacity: 1;
-}
-.social-media-icons .social-media-icon.xing {
-  background-color: #026466;
-  opacity: 1;
-}
-.social-media-icons .social-media-icon.linkedin {
-  background-color: #0077b5;
-  opacity: 1;
-}
-.social-media-icons .social-media-icon.instagram {
-  background-color: #405de6;
-  opacity: 1;
-}
-
-.follow {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  font-size: 2.5em;
-  color: #eee;
-  font-weight: 100;
-  padding-bottom: 8px;
-}
-
-.follow.facebook:after {
-  content: ' on Facebook';
-}
-.follow.xing:after {
-  content: ' on Xing';
-}
-.follow.linkedin:after {
-  content: ' on LinkedIn';
-}
-.follow.instagram:after {
-  content: ' on Instagram';
-}
-

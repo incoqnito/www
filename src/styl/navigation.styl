@@ -26,6 +26,10 @@
   .navigation-logo a
     background: url('/static/logo-horizontal.svg') no-repeat;
 
+  #showMenu {
+    background: url("/static/menu-black.svg") no-repeat;
+  }
+
 .navigation-logo
   flex: 1 0 auto
   a {
@@ -55,10 +59,17 @@
     &:hover
       text-decoration: underline;
 
+#showMenu {
+  padding: 0;
+  margin: 8px;
+  height: 34px;
+  width: 34px;
+  background: url("/static/menu.svg") no-repeat;
+}
+
 .mobile-navigation {
-  flex: 0 1 50px;
+  flex: 0 1 34px;
   transition: max-width 50%
-  height: 50px;
   padding: 8px;
   cursor: pointer;
 }

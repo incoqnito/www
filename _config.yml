@@ -10,3 +10,4 @@ include:
 keep_files:
   - index.js
   - static
+  - favicon

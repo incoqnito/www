@@ -21,6 +21,7 @@ module.exports = (env) => {
             /\.(css|styl)$/,
             /\.json$/,
             /\.svg$/,
+            /\.php$/
           ],
           use: [
             {
@@ -28,6 +29,18 @@ module.exports = (env) => {
               options: {
                 limit: 10000,
                 name: 'static/[name].[ext]'
+              }
+            }
+          ]
+        },
+        {
+          test: /\.php$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                limit: 10000,
+                name: '[name].[ext]'
               }
             }
           ]

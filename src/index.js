@@ -1,9 +1,14 @@
+import './sendmail.php'
+
 import 'bootstrap/dist/css/bootstrap.css'
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'animate.css'
 import './index.styl'
+import './img/background.jpg'
+
 import './img/testamonial-background.jpg'
 import './img/contact-background.jpg'
+import './img/digital-background.jpg'
 
 import './img/logo-horizontal.svg'
 import './img/logo-horizontal-white.svg'
@@ -13,11 +18,20 @@ import './img/xing.svg'
 import './img/linkedin.svg'
 import './img/instagram.svg'
 import './img/menu.svg'
+import './img/menu-black.svg'
 import './img/arrow-top.svg'
 import './img/background.svg'
 import './img/marker.png'
 
 import './img/icons/costs.svg'
+import './img/icons/webdev.svg'
+import './img/icons/mobile.svg'
+import './img/icons/webdev.svg'
+import './img/icons/contact.svg'
+import './img/icons/iot.svg'
+import './img/icons/cloudcomputing.svg'
+import './img/icons/projectmanagement.svg'
+import './img/icons/consulting.svg'
 import './img/icons/feedback-loop.svg'
 import './img/icons/ruler.svg'
 import './img/icons/skill.svg'
@@ -33,6 +47,7 @@ import 'jquery'
 import 'bootstrap'
 import 'owl.carousel'
 import 'jquery-match-height'
+import './js/vendor/awesomeCloud.js'
 
 import Slideout from  'slideout'
 import Typed from 'typed.js'
@@ -129,8 +144,19 @@ $(document).ready(() => {
     }
   })
 
-  $('.icon-box p').matchHeight();
+  $('#services .icon-box p').matchHeight();
+  //$('#services .icon-box h3').matchHeight();
+  $('#incoqnito .icon-box p').matchHeight();
+  //$('#incoqnito .icon-box h3').matchHeight();
 
+  var typed = new Typed('#typed', {
+    stringsElement: '#typed-strings',
+    startDelay: 21,
+    typeSpeed: 42,
+    backSpeed: 21,
+    loop: true
+  });
+  
 })
 
 var slideout = new Slideout({
@@ -140,13 +166,29 @@ var slideout = new Slideout({
   'tolerance': 70
 });
 
-var typed = new Typed('#typed', {
-  stringsElement: '#typed-strings',
-  typeSpeed: 42,
-  loop: true
-});
+var settings = {
+  "size" : {
+    "grid" : 8
+  },
+  "color" : {
+    "start" : "#fff", // color of the smallest font, if options.color = "gradient""
+    "end" : "#fff" // color of the largest font, if options.color = "gradient"
+  },
+  "options" : {
+    "printMultiplier" : 2
+  },
+  "font" : "Futura, Helvetica, sans-serif",
+  "shape" : "square"
+}
+$( "#wordcloud" ).awesomeCloud( settings );
 
 
 window.closeMenu = function closeMenu() {
   slideout.close()
 }
+
+
+window.addEventListener('load', () => {
+  $('body').addClass('loaded');
+  $('#loader-wrapper').fadeOut(600)
+})

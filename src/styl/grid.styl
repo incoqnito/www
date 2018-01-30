@@ -1,5 +1,5 @@
 .section {
-  padding: 120px 0;
+  padding: 80px 0;
   outline: none;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@
 }
 
 .grey-section {
-  background: #f1f1f1; 
+  background: #f3f3f3; 
 }
 
 .dark-section {
@@ -39,22 +39,38 @@
 
 .color-section
   background: #6569B0;
-  background: -webkit-linear-gradient(to right, #6569B0, #865B99);
-  background: linear-gradient(to right, #6569B0, #865B99);
-  &.color-section--color-3
-    background: #6569B0;
-    background: -webkit-linear-gradient(to right, #6569B0, #865B99);
-    background: linear-gradient(to right, #6569B0, #865B99);
-  &.color-section--color-4
-    background: #da1c5c;
-    background: -webkit-linear-gradient(to right, #e7427a, #da1c5c, #e7427a);
-    background: linear-gradient(to right, #e7427a, #da1c5c, #e7427a);
+  background: radial-gradient(circle at 35% 25%,  #ea598a, #865b99)
+
   h2, p
     color: white;
 
+  h3 
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+
+
+  .section-title {
+    h2 {
+      color: white;
+    }
+    .separator {
+      background: white
+    }
+  }
+  .section-subtitle h4 {
+    color white;
+  } 
+
+  .section-content {
+    color: white;
+    p {
+      font-size: 14px;
+    }
+  }
+
 .section-content {
-  padding: 16px;
-  padding-top: 40px;
+  padding: 40px 16px;
 
   &.--right-aligned {
     text-align: right
@@ -67,12 +83,9 @@
     text-align: center
     color: #58595B;
     font-size: 32px;
-    letter-spacing: 0.1em;
     padding: 16px 0;
-    span.colored {
-      color: #6569B0;
-      font-weight: 300;
-    }
+    text-transform: normal;
+
   .separator
     width: 100px;
     height: 1px;
@@ -87,10 +100,9 @@
     font-size: 20px;
     padding: 16px;
     text-align: center;
-    letter-spacing: 0.1em;
 
 .testamonial-section {
-  background: url('/static/testamonial-background.jpg')
+  background: url('/static/background.jpg')
   background-size: cover;
   background-position: center center
   padding: 0;
@@ -101,9 +113,6 @@
     .separator {
       background: white
     }
-    span.colored {
-      color: #da1c5c;
-    }
   }
   .section-subtitle h4 {
     color white;
@@ -113,13 +122,24 @@
   }
 }
 
-.testamonial-section-overlay {
+.testamonial-section-overlay
   background: rgba(34, 32, 43, 0.8);
-  padding: 80px 40px;
+  padding: 80px 0px;
   width: 100%;
   min-height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+
+  h3 
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 6px;
+
+
+#company
+  h3 
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-bottom: 6px;
