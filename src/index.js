@@ -3,8 +3,11 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'animate.css'
 import './index.styl'
 import './img/testamonial-background.jpg'
+import './img/contact-background.jpg'
 
-import './img/incoqnito_logo_white.svg'
+import './img/logo-horizontal.svg'
+import './img/logo-horizontal-white.svg'
+
 import './img/facebook.svg'
 import './img/xing.svg'
 import './img/linkedin.svg'
@@ -22,19 +25,23 @@ import './img/icons/costs.svg'
 import './img/icons/timesaving.svg'
 import './img/icons/transparence.svg'
 import './img/icons/person.svg'
-
+import './img/icons/address.svg'
+import './img/icons/phone.svg'
+import './img/icons/mail.svg'
 
 import 'jquery'
 import 'bootstrap'
 import 'owl.carousel'
+import 'jquery-match-height'
 
 import Slideout from  'slideout'
+import Typed from 'typed.js'
 
 $(document).ready(() => {
-  $('.sub-navigation').affix({
+  $('.navigation').affix({
     offset: {
       top: function() {
-        return (this.top = $('.banner').outerHeight(true) - 47)
+        return (this.top = $('.banner').outerHeight(true) - 76)
       }
     }
   })
@@ -78,13 +85,6 @@ $(document).ready(() => {
       }
     }
   });
-  console.log(+document.querySelector('.site').offsetWidth * 0.80)
-  var slideout = new Slideout({
-    'panel': document.querySelector('.site-container'),
-    'menu': document.querySelector('.site-navigation'),
-    'padding': document.querySelector('.site').offsetWidth - 80,
-    'tolerance': 70
-  });
 
   document.querySelector('.mobile-navigation').addEventListener('click', function() {
     slideout.toggle();
@@ -108,25 +108,45 @@ $(document).ready(() => {
     margin: 30,
     dots: true,
     dotsEach: true,
-    stagePadding:30,
-    smartSpeed:450
+    stagePadding: 30,
+    smartSpeed: 450
   });
 
   $('.customers').owlCarousel({
-    loop:true,
-    margin:10,
-    responsiveClass:true,
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
     responsive:{
       0:{
-        items:2,
+        items: 2,
       },
       600:{
-        items:5,
+        items: 5,
       },
       1000:{
-        items:10
+        items: 10
       }
     }
   })
 
+  $('.icon-box p').matchHeight();
+
 })
+
+var slideout = new Slideout({
+  'panel': document.querySelector('.site-container'),
+  'menu': document.querySelector('.site-navigation'),
+  'padding': document.querySelector('.site').offsetWidth - 80,
+  'tolerance': 70
+});
+
+var typed = new Typed('#typed', {
+  stringsElement: '#typed-strings',
+  typeSpeed: 42,
+  loop: true
+});
+
+
+window.closeMenu = function closeMenu() {
+  slideout.close()
+}

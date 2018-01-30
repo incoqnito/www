@@ -7,21 +7,28 @@
     <div class="banner-item">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5">
-            <h2>Lorem Ipsum</h2>
-            <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil
-              men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness,
-              for he is truly his brother's keeper and the finder of lost children.</p>
-            <a href="#company" class="button">Über uns</a>
+          <div class="col-md-12">
+ 
           </div>
-          <div class="col-lg-7">
+        </div>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="animated bounceInUp">
+              <h2>Lorem Ipsum</h2>
+              <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil
+                men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness,
+                for he is truly his brother's keeper and the finder of lost children.</p>
+              <a href="#company" class="button">Über uns</a>
+            </div>
+          </div>
+          <div class="col-md-7">
 
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="sub-navigation">
+  <!--<div class="sub-navigation">
     <div class="sub-navigation-wrapper">
       <ul class="sub-navigation-list">
         <li class="sub-navigation-entry">
@@ -38,7 +45,7 @@
         </li>
       </ul>
     </div>
-  </div>
+  </div>-->
 </div>
 <section id="company" class="section grey-section">
   <div class="container">
@@ -52,10 +59,19 @@
           <div class="separator"></div>
         </div>
         <div class="section-subtitle">
-          <h4>Lorem ipsum dolor sit amet</h4>
+          <h4>Wir sind Incoqnito!</h4>
         </div>
       </div>
     </div>
+  </div>
+</section>
+<section class="section testamonial-section">
+  <div class="testamonial-section-overlay">
+    <div id="typed-strings">
+        <p>Digitale Herausforderungen meistern...</p>
+        <p>Wir gestalten Ihre digitale Zukunft...</p>
+    </div>
+    <h2 id="typed"></h2>
   </div>
 </section>
 <section id="services" class="section white-section">
@@ -64,64 +80,57 @@
       <div class="col-lg-12">
         <div class="section-title">
           <h2>
-            <span>Unsere </span>
-            <span class="colored">Leistungen</span>
+            <span>Warum </span>
+            <span class="colored">Incoqnito?</span>
           </h2>
           <div class="separator"></div>
         </div>
         <div class="section-subtitle">
-          <h4>Lorem ipsum dolor sit amet</h4>
+          <h4>Das zeichnet uns aus als Ihr IT-Dienstleister</h4>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="icon-box --is-active">
-          <img src="/static/skill.svg" />
-          <h3>Kompetenz & Erfahrung </h3>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="icon-box">
-          <img src="/static/costs.svg" />
-          <h3>Kosten- & Nutzeneffizienz</h3>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="icon-box">
-          <img src="/static/feedback-loop.svg" />
-          <h3>Feedbackschleifen</h3>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="icon-box-description">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
+    <div style="row-fluid">
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="icon-box --is-active" id="skill">
+          <img src="/static/skill.svg" height="100" />
+          <h3>Kompetenz & Erfahrung</h3>
           <p>Technisches Fachwissen sowie praktische Erfahrung in den relevanten Technologien der heutigen Zeit sind für uns selbstverständlich. Um den hohen Ansprüchen an die Qualität unserer Ergebnisse gerecht werden zu können, bleiben wir technisch immer auf dem neuesten Stand. "Stillstand ist Rückschritt und der erste Schritt ins Grab.“</p>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="icon-box">
-          <img src="/static/transparence.svg" />
-          <h3>Transparenz</h3>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="icon-box" id="costs">
+          <img src="/static/costs.svg" height="100"  />
+          <h3>Kosten- & Nutzeneffizienz</h3>
+          <p>Bei der Konzeption und Umsetzung unserer Projekte steht der Kundennutzen an erster Stelle. Basierend auf dem Anforderungsprofil des Projektes wählen wir die am besten geeigneten Technologien zur Umsetzung aus. Unser Ziel: den Entwicklungsprozess so produktiv wie möglich zu gestalten, um Kosten zu minimieren – und den Kundennutzen zu erhöhen.</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="icon-box">
-          <img src="/static/ruler.svg" />
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="icon-box" id="feedback">
+          <img src="/static/feedback-loop.svg" height="100"  />
+          <h3>Agile & Feedbackschleifen</h3>
+          <p>Im Rahmen des agilen Projektmanagements binden wir unsere Kunden aktiv in den Umsetzungsprozess ein. Regelmäßige Feedbackschleifen zeigen dem Kunden den aktuellen Entwicklungsstand, sodass dynamisch Anpassungen vorgenommen werden können. So erreichen wir gemeinsamen das gewünschte Ergebnis!</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="icon-box" id="transparency">
+          <img src="/static/transparence.svg" height="100" />
+          <h3>Transparenz im Entstehungsprozess</h3>
+          <p>Wir von Incoqnito leben die Methodik der agilen Softwareentwicklung. Konkret definierte User Stories und Zeitschätzungen zur Umsetzung geben unseren Kunden einen Überblick über den aktuellen Prozess. Unser Projektmanagement strukturieren wir dabei stets transparent und verständlich – für unser Team und für unsere Kunden.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="icon-box" id="flexible">
+          <img src="/static/ruler.svg" height="100" />
           <h3>Maßgeschneidert & Flexibel</h3>
+          <p>Um den individuellen Bedürfnissen unserer Kunden gerecht werden zu können, sind Empathie und aktives Mitdenken das A und O. Dementsprechend evaluieren wir vorab die konkreten Anforderungen und Voraussetzungen für die spezifischen Anwendungsfälle unserer Kunden.</p>
         </div>
       </div>
-      <div class="col-md-4">
-        <div class="icon-box">
-          <img src="/static/timesaving.svg" />
+      <div class="col-lg-4 col-md-6 col-sm-12">
+        <div class="icon-box" id="timesaving">
+          <img src="/static/timesaving.svg" height="100" />
           <h3>Termintreue & Zuverlässigkeit</h3>
+          <p>Schnelle Entscheidungswege und kurze Feedbackschleifen sind wichtige Bausteine unserer Arbeitsweise. Wir arbeiten nach dem Scrum-Prinzip: Unsere Projekte werden in mehreren kurzen Entwicklungszyklen umgesetzt. Somit halten wir stets die vereinbarten Termine.</p>
         </div>
       </div>
     </div>
@@ -132,52 +141,56 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <div class="section-title">
-            <h2>
-              <span>Unser </span>
-              <span class="colored">Partner & Kunden</span>
-            </h2>
-            <div class="separator"></div>
-          </div>
-          <div class="section-subtitle">
-            <h4>Vielen Dank an unsere Kunden für das entgegengebrachte Vertrauen</h4>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
           <img src="/static/person.svg" />
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12">
-            <div class="testamonial owl-carousel">
-              <div class="item">
-                <div class="testamonial-qoute">
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus. </p>
-                  <h3>Frank Rouse<span>Designer @ Company</span></h3>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testamonial-qoute">
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus. Lorem ipsum dolor sit amet. </p>
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus. Lorem ipsum dolor sit amet. </p>
-                  <h3>Frank Rouse<span>Designer @ Company</span></h3>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testamonial-qoute">
-                  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.<br><br> Aenean massa. Cum sociis natoque penatibus. </p>
-                  <h3>Frank Rouse<span>Designer @ Company</span></h3>
-                </div>
+          <div class="testamonial owl-carousel">
+            <div class="item">
+              <div class="testamonial-qoute">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus. </p>
+                <h3>Frank Rouse<span>Designer @ Company</span></h3>
               </div>
             </div>
+            <div class="item">
+              <div class="testamonial-qoute">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus. Lorem ipsum dolor sit amet. </p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus. Lorem ipsum dolor sit amet. </p>
+                <h3>Frank Rouse<span>Designer @ Company</span></h3>
+              </div>
+            </div>
+            <div class="item">
+              <div class="testamonial-qoute">
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus.<br><br> Aenean massa. Cum sociis natoque penatibus. </p>
+                <h3>Frank Rouse<span>Designer @ Company</span></h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<section id="career" class="section grey-section">
+<section class="section grey-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="section-title">
+          <h2>
+            <span>Unsere </span>
+            <span class="colored">Kunden</span>
+          </h2>
+          <div class="separator"></div>
+        </div>
+        <div class="section-subtitle">
+          <h4>Vielen Dank an unsere Kunden für das entgegengebrachte Vertrauen</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="career" class="section white-section">
   <div class="container">
     <div class="row">
       <div class="col-lg-12">
@@ -187,6 +200,9 @@
             <span class="colored">Karriere</span>
           </h2>
           <div class="separator"></div>
+          <div class="section-subtitle">
+              <h4>Werde Teil des Incoqnito Teams!</h4>
+            </div>
         </div>
       </div>
     </div>
@@ -220,8 +236,9 @@
     </div>
   </div>
 </section>
-<section id="contact" class="section grey-section">
-  <div class="container">
+<section id="contact" class="section testamonial-section">
+  <div class="testamonial-section-overlay">
+    <div class="container">
       <div class="row">
         <div class="col-lg-12">
           <div class="section-title">
@@ -231,27 +248,94 @@
             </h2>
             <div class="separator"></div>
           </div>
+          <div class="section-subtitle">
+            <h4>Lassen Sie uns in Kontakt treten!</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-content">
+            <p>Sie haben noch offene Fragen oder möchten eine unverbindliche Anfrage stellen? Ihnen ist noch nicht ganz klar, was Sie zur Lösung Ihrer Herausforderung benötigen? Wir sind für Sie da!</p><br>
+            <p>Rufen Sie uns einfach an oder schreiben Sie uns eine Nachricht mit einigen Eckdaten zu Ihrem Anliegen. Wir helfen Ihnen gerne, die beste Lösung für Ihre Bedürfnisse zu finden.</p><br>
+            <p>Wir freuen uns, von Ihnen zu hören und melden uns schnellstmöglich zurück!</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" placeholder="Name..."/>
+              </div>
+              <div class="col-md-6">
+                <input type="text" placeholder="E-Mail..." />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <input type="text" placeholder="Betreff..." />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <textarea placeholder="Nachricht..."></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="contact-information">
+              <div class="contact-information-headline">
+                <img src="/static/phone.svg" />
+                <h3>Telefon</h3>
+              </div>
+              <div class="contant-information-content">
+                +49 (0)511 3605598 - 0
+              </div>
+            </div>
+            <div class="contact-information">
+              <div class="contact-information-headline">
+                <img src="/static/address.svg" />
+                <h3>Adresse</h3>
+              </div>
+              <div class="contant-information-content">
+                Tiergartenstr. 105<br>
+                D-30559 Hannover
+              </div>
+            </div>
+            <div class="contact-information">
+              <div class="contact-information-headline">
+                <img src="/static/mail.svg" />
+                <h3>E-Mail</h3>
+              </div>
+              <div class="contant-information-content">
+                <a href="mailto:info@incoqnito.io">info@incoqnito.io</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 </section>
 <section id="maps" class="section.grey-section" style="height: 350px">
 </section>
 <script>
-  function initMap() {
+  function initMap () {
     // Create a map object and specify the DOM element for display.
     var map = new google.maps.Map(document.getElementById('maps'), {
       center: {
-        lat: 52.3614235,
-        lng: 9.8283783
+        lat: 52.361424,
+        lng: 9.830571999999961
       },
       zoom: 16
     });
 
     var marker = new google.maps.Marker({
       position: {
-        lat: 52.3695465,
-        lng: 9.7115427
+        lat: 52.361424,
+        lng: 9.830571999999961
       },
       map: map
     })

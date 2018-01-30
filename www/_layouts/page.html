@@ -7,11 +7,6 @@
       <meta content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development." name="description">
       <meta content="Mark Otto, Jacob Thornton, and Bootstrap contributors" name="author">
       <title>{{ page.title }}</title>
-      <style>
-        img {
-          height: 100px;
-        }
-      </style>
     </head>
     <body>
       <div class="site">
@@ -24,12 +19,11 @@
           {% include footer.html %}
         </div>
         <div class="site-navigation">
-            <a href="/">Startseite</a>
-            <a href="/unternehmen">Unternehmen</a>
-            <a href="/kompetenzen">Kompetenzen</a>
-            <a href="/referenzen">Referenzen</a>
-            <a href="/karriere">Karriere</a>
-            <a href="/kontakt">Kontakt</a>
+            <a href="#home" onclick="javascript:closeMenu()">Startseite</a>
+            <a href="#company" onclick="javascript:closeMenu()">Unternehmen</a>
+            <a href="#services" onclick="javascript:closeMenu()">Kompetenzen</a>
+            <a href="#career" onclick="javascript:closeMenu()">Karriere</a>
+            <a href="#contact" onclick="javascript:closeMenu()">Kontakt</a>
           </div>
     </body>
     <script src="/index.js"></script>

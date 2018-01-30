@@ -1,5 +1,5 @@
 .section {
-  padding: 60px 0;
+  padding: 120px 0;
   outline: none;
   display: flex;
   flex-direction: column;
@@ -13,6 +13,28 @@
 
 .grey-section {
   background: #f1f1f1; 
+}
+
+.dark-section {
+  background: #22202b;
+  .section-title {
+    h2 {
+      color: white;
+    }
+    .separator {
+      background: white
+    }
+    span.colored {
+      color: #da1c5c;
+    }
+  }
+  .section-subtitle h4 {
+    color white;
+  } 
+
+  .section-content {
+    color: white;
+  }
 }
 
 .color-section
@@ -31,7 +53,8 @@
     color: white;
 
 .section-content {
-  padding-top: 60px;
+  padding: 16px;
+  padding-top: 40px;
 
   &.--right-aligned {
     text-align: right
@@ -45,6 +68,7 @@
     color: #58595B;
     font-size: 32px;
     letter-spacing: 0.1em;
+    padding: 16px 0;
     span.colored {
       color: #6569B0;
       font-weight: 300;
@@ -60,9 +84,10 @@
 .section-subtitle
   h4
     font-weight: 300
-    font-size: 16px;
+    font-size: 20px;
     padding: 16px;
     text-align: center;
+    letter-spacing: 0.1em;
 
 .testamonial-section {
   background: url('/static/testamonial-background.jpg')
@@ -82,7 +107,10 @@
   }
   .section-subtitle h4 {
     color white;
-  } 
+  }
+  .section-content {
+    color: white;
+  }
 }
 
 .testamonial-section-overlay {

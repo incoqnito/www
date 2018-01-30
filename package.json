@@ -49,12 +49,17 @@
   "dependencies": {
     "animate.css": "^3.5.2",
     "bootstrap": "^3.3.7",
+    "express": "^4.16.2",
+    "express-liquid": "^0.2.6",
     "jquery": "^3.2.1",
+    "jquery-match-height": "^0.7.2",
     "jquery-sticky": "^1.0.4",
+    "nodemailer": "^4.4.2",
     "owl.carousel": "^2.2.0",
     "slideout": "^1.0.1",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.1"
+    "stylus-loader": "^3.0.1",
+    "typed.js": "^2.0.6"
   },
   "author": "",
   "license": "ISC"

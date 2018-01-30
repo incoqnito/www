@@ -1,21 +1,40 @@
 .navigation
-  padding-top: 12px;
+  padding: 12px 0px;
   position: absolute;
   z-index: 100;
   width: 100%;
-  overflow: hidden
+  overflow: hidden;
+  position: fixed;
+  background: rgba(0,0,0, 0.1);
+  transition: background 0.3s ease-in
 
 .navigation .container {
   display: flex;
   flex-direction: row;
 }
 
+.navigation.affix
+  position: fixed;
+  background: white;
+  padding-bottom: 12px;
+  top: 0
+  z-index: 1000;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  .navigation-entry a
+    color: black;
+    text-shadow: none;
+  .navigation-logo a
+    background: url('/static/logo-horizontal.svg') no-repeat;
+
 .navigation-logo
   flex: 1 0 auto
-  padding-left: 8px;
-  img
-    padding-top: 8px;
+  a {
+    display: block;
+    margin: 8px;
+    height: 36px;
+    background: url('/static/logo-horizontal-white.svg') no-repeat;
     width: 120px;
+  }
 
 .navigation-list
   padding: 0;
@@ -32,7 +51,7 @@
     color white;
     padding: 16px;
     text-decoration: none;
-    text-shadow: 1px 2px 2px rgba(0,0,0, 0.8);
+    //text-shadow: 1px 2px 2px rgba(0,0,0, 0.8);
     &:hover
       text-decoration: underline;
 
@@ -57,14 +76,6 @@
   display: flex;
   align-items: center
 }
-
-.sub-navigation.affix
-  position: fixed
-  visibility: visible;
-  top: 0
-  height: 47px;
-  z-index: 1000;
-  background: rgba(0,0,0, 0.8)
 
 
 .sub-navigation-list
