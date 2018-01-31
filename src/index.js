@@ -125,7 +125,7 @@ $(document).ready(() => {
     animateOut: 'fadeOut',
     animateIn: 'slideInUp',
     items: 1,
-    margin: 30,
+    //margin: 30,
     dots: true,
     dotsEach: true,
     stagePadding: 30,
@@ -168,7 +168,7 @@ $(document).ready(() => {
       $('.contact-form input[name="name"]').val('')
       $('.contact-form input[name="email"]').val('')
       $('.contact-form input[name="subject"]').val('')
-      $('.contact-form input[name="message"]').val('')
+      $('.contact-form textarea[name="message"]').val('')
 
     }).fail(function() {
 

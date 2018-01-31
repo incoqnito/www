@@ -26,7 +26,7 @@ class Repositories extends Preact.Component {
           {
             this.state.repositories.map((repo) => (
               <li className="opensource-list-entry">
-                <a href={repo.html_url}>
+                <a target="_blank" href={repo.html_url}>
                   <h3>{ repo.name }</h3>
                   <h4>{ repo.full_name }</h4>
                   <div class="stars"><span>{ repo.stargazers_count }</span><img src="/static/star.svg" /></div>
