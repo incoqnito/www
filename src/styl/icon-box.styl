@@ -2,7 +2,6 @@
   position: relative;
   padding: 40px 20px;
   text-align: center;
-  cursor: pointer;
   img {
     height: 60px;
   }
@@ -55,6 +54,34 @@
     font-weight: 300;
     color: white;
     font-size: 14px;
+  }
+}
+
+.job-offer-box {
+  display: block;
+  margin-bottom: 16px;
+  padding: 80px 40px;
+  min-width: 200px;
+  font-size: 10px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in;
+  box-shadow: 0 1px 0 0 rgba(0,0,0,0.2);
+  border: 1px solid #ddd
+  color: #000;
+  background: #f8f8f8;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  transition: transform 0.3s ease
+  h3 {
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+  }
+  &:hover, &:active, &:focus:active, {
+    color: black;
+    text-decoration: none;
+    transform: scale(1.1)  
   }
 }
 
