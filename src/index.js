@@ -33,6 +33,7 @@ import './img/icons/cloudcomputing.svg'
 import './img/icons/projectmanagement.svg'
 import './img/icons/consulting.svg'
 import './img/icons/feedback-loop.svg'
+import './img/icons/star.svg'
 import './img/icons/ruler.svg'
 import './img/icons/skill.svg'
 import './img/icons/costs.svg'
@@ -48,6 +49,10 @@ import 'bootstrap'
 import 'owl.carousel'
 import 'jquery-match-height'
 import './js/vendor/awesomeCloud.js'
+
+
+
+import './js/index.js'
 
 import Slideout from  'slideout'
 import Typed from 'typed.js'
@@ -145,7 +150,7 @@ $(document).ready(() => {
   })
 
   $('#services .icon-box p').matchHeight();
-  //$('#services .icon-box h3').matchHeight();
+  $('.job-offer-box h3').matchHeight();
   $('#incoqnito .icon-box p').matchHeight();
   //$('#incoqnito .icon-box h3').matchHeight();
 

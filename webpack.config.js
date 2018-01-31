@@ -72,7 +72,8 @@ module.exports = (env) => {
                   'stage-3',
                   'stage-2',
                   'stage-1',
-                  'stage-0'
+                  'stage-0',
+                  'preact'
                 ],
               }
             }

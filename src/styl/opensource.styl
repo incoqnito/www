@@ -1,0 +1,72 @@
+.opensource-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 0;
+  margin: 0;
+}
+
+
+.opensource-list-entry {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  height: 64px;
+  min-width: 200px;
+  font-size: 10px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in;
+  background-color: rgba(255,255,255,0.1);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+
+  &:last-child {
+    border-bottom: 0;
+  }
+
+  a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: white;
+    &:hover, &:active, &:focus, &:focus:active, &:visited {
+      text-decoration: none;
+      outline: none;
+    }
+  }
+
+  h3  {
+    font-size: 16px;
+    text-transform: none;
+    padding: 0;
+    padding-right: 16px;
+    flex: 0 0 auto;
+  }
+
+  h4 {
+    margin: 0;
+    font-size: 12px;
+    color: #bbb;
+    text-transform: none;
+    flex: 1 0 0;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .stars {
+    flex: 0 0 auto;
+    justify-content: flex-end;  
+    display: flex;
+
+    img {
+      height: 14px;
+      margin: 0;
+      margin-left: 8px;
+    }
+  }
+}
