@@ -11,3 +11,4 @@ keep_files:
   - index.js
   - static
   - favicon
+  - sendmail.php

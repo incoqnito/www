@@ -39,7 +39,6 @@ module.exports = (env) => {
             {
               loader: 'file-loader',
               options: {
-                limit: 10000,
                 name: '[name].[ext]'
               }
             }
