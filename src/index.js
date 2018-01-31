@@ -148,6 +148,21 @@ $(document).ready(() => {
       }
     }
   })
+  window.$ = $
+  $('.contact-form').on('submit', (event) => {
+    let params = {
+      'name': $('.contact-form input[name="name"]').val(),
+      'email': $('.contact-form input[name="email"]').val(),
+      'subject': $('.contact-form input[name="subject"]').val(),
+      'message': $('.contact-form textarea[name="message"]').val()
+    }
+
+    console.log(params)
+
+    $.post('/sendmail.php', params)
+
+    event.preventDefault()
+  })
 
   $('#services .icon-box p').matchHeight();
   $('.job-offer-box h3').matchHeight();
