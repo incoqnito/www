@@ -148,7 +148,8 @@ $(document).ready(() => {
       }
     }
   })
-  window.$ = $
+  
+  $('.message').fadeOut()
   $('.contact-form').on('submit', (event) => {
     let params = {
       'name': $('.contact-form input[name="name"]').val(),
@@ -157,9 +158,26 @@ $(document).ready(() => {
       'message': $('.contact-form textarea[name="message"]').val()
     }
 
-    console.log(params)
 
-    $.post('/sendmail.php', params)
+    $.post('/sendmail.php', params).done(function() {
+
+      $('.message')
+        .addClass('success')
+        .html('Vielen Dank! Wir werden ihre Anfrage schnellst möglichst bearbeiten!')
+        .fadeIn()
+      $('.contact-form input[name="name"]').val('')
+      $('.contact-form input[name="email"]').val('')
+      $('.contact-form input[name="subject"]').val('')
+      $('.contact-form input[name="message"]').val('')
+
+    }).fail(function() {
+
+      $('.message')
+      .addClass('error')
+      .html('Es ist ein Fehler aufgetreten. Kontaktieren Sie uns unter doch bitte mit einem E-Mail Client ihrere Wahl!')
+      .fadeIn()
+
+    })
 
     event.preventDefault()
   })

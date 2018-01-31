@@ -6,7 +6,7 @@
   $message = htmlentities($_POST['message']);
 
   // set here
-  $subject = "Contact form submitted!";
+  $subject = "Incoqnito.io " . $subject;
   $to = 'info@incoqnito.io';
 
   $body = <<<HTML
