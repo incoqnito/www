@@ -125,7 +125,7 @@ $(document).ready(() => {
     animateOut: 'fadeOut',
     animateIn: 'slideInUp',
     items: 1,
-    //margin: 30,
+    margin: 30,
     dots: true,
     dotsEach: true,
     stagePadding: 30,
