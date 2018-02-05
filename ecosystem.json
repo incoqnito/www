@@ -5,7 +5,7 @@
       "host" : ["82.165.207.34"],
       "ref"  : "origin/master",
       "repo" : "git@github.com:incoqnito/www.git",
-      "path" : "/var/www/dev.incoqnito.io",
+      "path" : "/var/www/incoqnito.io",
       "post-deploy" : "npm install; rvm use 2.2.5; jekyll build; npm run production"
      }
   }
