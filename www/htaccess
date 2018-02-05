@@ -1,0 +1,15 @@
+---
+permalink: .htaccess
+---
+<IfModule mod_expires.c>
+  RewriteEngine on
+  RewriteBase /
+
+  # strip trailing slash from non-directoies
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.+?)/$ /$1 [L,R=301]
+
+  # make sure corresponding html file exists
+  RewriteCond %{DOCUMENT_ROOT}/$1\.html -f
+  RewriteRule ^(.+?)/?$ $1.html [L]
+</IfModule>
